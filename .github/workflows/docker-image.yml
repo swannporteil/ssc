@@ -21,6 +21,8 @@ jobs:
         registry: docker.io
         repository: swannporteil/ssc
         tag_with_sha: true
+      env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   sonarcloud:
     name: SonarCloud
